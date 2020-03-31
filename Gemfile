@@ -9,22 +9,38 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 gem 'sqlite3', '~> 1.4'
 
 # mysql 사용
-gem "mysql2"
+gem 'mysql2', '~> 0.5.3'
 
 # semantic ui
 gem 'semantic-ui-sass', '~> 2.4', '>= 2.4.2.0'
 
+# User Boostrap
+gem 'bootstrap', '~> 4.4', '>= 4.4.1'
+gem 'popper_js', '~> 1.9', '>= 1.9.9'
+gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
+#gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
+
+# app engine
+gem 'appengine', '~> 0.5.0'
+
+# code 
+gem 'figaro', '~> 1.1', '>= 1.1.1'
+
 # Use Puma as the app server
-gem 'puma', '~> 4.1'
+gem 'puma', '~> 4.3', '>= 4.3.3'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem 'webpacker', '~> 4.0'
+gem 'webpacker', '~> 5.0', '>= 5.0.1'
+
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+gem 'turbolinks', '~> 5.2', '>= 5.2.1'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.7'
+gem 'jbuilder', '~> 2.10'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -34,20 +50,21 @@ gem 'jbuilder', '~> 2.7'
 # gem 'image_processing', '~> 1.2'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.4.2', require: false
+gem 'bootsnap', '~> 1.4', '>= 1.4.6', require: false
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', '~> 11.1', '>= 11.1.1', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
-  gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'web-console', '~> 4.0', '>= 4.0.1'
+  gem 'listen', '~> 3.2', '>= 3.2.1'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-watcher-listen', '~> 2.0', '>= 2.0.1'
 end
 
 group :test do

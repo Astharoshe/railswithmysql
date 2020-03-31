@@ -9,16 +9,30 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000 
 
+
 # mysqlconnect Setting
 MySQLConnect: &mysqlconnect
   adapter: mysql2
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000  
   encoding: utf8
-  username: RailsWorker
-  password: E67J@AbB7$
-  host: <%= ENV.fetch("MYSQL_HOST") %>
-  #host: 127.0.0.1
+  username: <%= ENV["CONNECT_ID"] %>
+  password: <%= ENV["CONNECT_PW"] %>
+  host: 127.0.0.1
+  # 127.0.0.1
+
+
+# mysqlconnect Setting
+CloudConnect: &mysqlsocket
+  adapter: mysql2
+  eencoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000  
+  encoding: utf8
+  username: <%= ENV["SOCKET_ID"] %>
+  password: <%= ENV["SOCKET_PW"] %>
+  socket: <%= ENV["SOCKET_URL"] %>
+
 
 development:
   <<: *mysqlconnect
@@ -31,11 +45,11 @@ development:
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
+# Do not set this db to the same as development or productio.
 test:
   <<: *default
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  <<: *mysqlsocket
+  database: production

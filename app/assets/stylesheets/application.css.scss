@@ -1,0 +1,75 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+//@import "bootstrap/functions";
+//@import "bootstrap/variables";
+//@import "bootstrap/mixins";
+
+
+
+@import "bootstrap";
+//@import "bootstrap/dist/css/bootstrap";
+
+// use fontawesome
+//@import "font-awesome";
+@import url('@fortawesome/fontawesome-free/css/all');
+
+// use fontawesome
+//@import '@fortawesome/fontawesome-free/css/all';
+
+
+//bootstrap scss
+/*
+@import '~bootstrap/scss/_functions.scss';
+@import '~bootstrap/scss/_variables.scss';
+@import '~bootstrap/scss/_mixins.scss';
+@import '~bootstrap/scss/_root.scss';
+@import '~bootstrap/scss/_reboot.scss';
+@import '~bootstrap/scss/_type.scss';
+@import '~bootstrap/scss/_alert.scss';
+@import '~bootstrap/scss/_badge';
+@import '~bootstrap/scss/_breadcrumb';
+@import '~bootstrap/scss/_button-group';
+@import '~bootstrap/scss/_buttons';
+@import '~bootstrap/scss/_buttons.scss';
+@import '~bootstrap/scss/_card.scss';
+@import '~bootstrap/scss/_carousel.scss';
+@import '~bootstrap/scss/_close.scss';
+@import '~bootstrap/scss/_code.scss';
+@import '~bootstrap/scss/_custom-forms.scss';
+@import '~bootstrap/scss/_dropdown.scss';
+@import '~bootstrap/scss/_forms.scss';
+@import '~bootstrap/scss/_grid.scss';
+@import '~bootstrap/scss/_images.scss';
+@import '~bootstrap/scss/_input-group.scss';
+@import '~bootstrap/scss/_jumbotron.scss';
+@import '~bootstrap/scss/_list-group.scss';
+@import '~bootstrap/scss/_media.scss';
+@import '~bootstrap/scss/_modal.scss';
+@import '~bootstrap/scss/_nav.scss';
+@import '~bootstrap/scss/_navbar.scss';
+@import '~bootstrap/scss/_pagination.scss';
+@import '~bootstrap/scss/_popover.scss';
+@import '~bootstrap/scss/_print.scss';
+@import '~bootstrap/scss/_progress.scss';
+@import '~bootstrap/scss/_spinners.scss';
+@import '~bootstrap/scss/_tables.scss';
+@import '~bootstrap/scss/_toasts.scss';
+@import '~bootstrap/scss/_tooltip.scss';
+@import '~bootstrap/scss/_transitions.scss';
+@import '~bootstrap/scss/_utilities.scss';
+*/
