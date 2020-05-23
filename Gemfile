@@ -27,7 +27,7 @@ gem 'appengine', '~> 0.5.0'
 gem 'figaro', '~> 1.1', '>= 1.1.1'
 
 # Use Puma as the app server
-gem 'puma', '~> 4.3', '>= 4.3.3'
+gem 'puma', '~> 4.3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
