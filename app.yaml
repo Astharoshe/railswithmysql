@@ -19,7 +19,7 @@ entrypoint: bundle exec rails server -p $PORT
 # [END runtime]
 
 env_variables:
-  SECRET_KEY_BASE: <%= ENV["SECRET_KEY_BASE"] %>
+  #SECRET_KEY_BASE: <%= ENV["SECRET_KEY_BASE"] %>
    
 
 # [START cloud_sql_beta_settings]

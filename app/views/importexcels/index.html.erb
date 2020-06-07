@@ -1,0 +1,36 @@
+<h2>Import Products</h2>
+
+<%= form_tag import_importexcels_path, id: "importform",  multipart: true do %>
+  <%= file_field_tag "filefield", accept: ".xlsm, .xlsx" %>
+  <%= submit_tag "Import" %>
+<% end %>
+
+
+
+<!--
+import_importexcels_path
+ <%= file_field_tag :file, accept: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" %>
+
+-->
+<div>
+
+
+	
+<tbody>
+<% @datas.each do |data| %>
+	<tr>
+		<td><%= data.num %></td>
+		<td><%= data.field %></td>
+		<td><%= data.stamptype %></td>
+		<td><%= data.value %></td>
+		<td><%= data.name %></td>
+		<td><%= data.url %></td>
+		<td><%= data.created_at %> </td>
+		<br>
+	</tr>
+<% end %>
+</tbody>
+</div>	
+
+
+<%= javascript_pack_tag 'importexcel', 'data-turbolinks-track': 'reload' %>

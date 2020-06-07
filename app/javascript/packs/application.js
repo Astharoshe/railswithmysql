@@ -9,7 +9,7 @@ require("@rails/activestorage").start()
 require("channels")
 require("jquery")
 require("bootstrap")
-
+//require("roo")
 
 //import "@fortawesome/fontawesome-free/js/all";
 

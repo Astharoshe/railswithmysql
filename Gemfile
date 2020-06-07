@@ -11,8 +11,11 @@ gem 'sqlite3', '~> 1.4'
 # mysql 사용
 gem 'mysql2', '~> 0.5.3'
 
+# use excel
+gem 'roo', '~> 2.8', '>= 2.8.3'
+
 # semantic ui
-gem 'semantic-ui-sass', '~> 2.4', '>= 2.4.2.0'
+# gem 'semantic-ui-sass', '~> 2.4', '>= 2.4.2.0'
 
 # User Boostrap
 gem 'bootstrap', '~> 4.4', '>= 4.4.1'
@@ -21,7 +24,7 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 #gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
 
 # app engine
-gem 'appengine', '~> 0.5.0'
+# gem 'appengine', '~> 0.5.0'
 
 # code 
 gem 'figaro', '~> 1.1', '>= 1.1.1'

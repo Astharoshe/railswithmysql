@@ -1,4 +1,5 @@
 Rails.application.configure do
+# config.action_cable.url = 'wss://example.com/cable'Rails.application.configure do
   begin
     config.hosts << /.*\.goorm\.io$/
   rescue
@@ -64,5 +65,9 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
 	
+  # config.action_cable.allowed_request_origins = [/http:\/\/*/, /https:\/\/*/]
+  #config.action_cable.url = 'wss://rails-mysql-qqdcb.run.goorm.io/cable'
+  # 주소 허용
+  config.action_cable.allowed_request_origins = [ 'https://rails-mysql-qqdcb.run.goorm.io' ]
 
 end

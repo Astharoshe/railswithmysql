@@ -19,6 +19,7 @@ MySQLConnect: &mysqlconnect
   username: <%= ENV["CONNECT_ID"] %>
   password: <%= ENV["CONNECT_PW"] %>
   host: 127.0.0.1
+  #reconnect: true
   # 127.0.0.1
 
 
